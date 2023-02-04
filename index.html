@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS TIMER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=audiowide:400" rel="stylesheet" />
+</head>
+<body>
+    <audio id="song" autoplay="autoplay">
+        <source src="">
+    </audio>
+
+<div id="container">
+
+    <div id="header">
+        <h1>FOCUS TIMER</h1>
+    </div>
+    <div id="interval">
+        <div class="input">
+            <p>Focus: <span id="focusLengh">1</span> minutes</p>
+            <input type="range" class="slider focusRange" name="focus" min="1" max="60" step="1" value="1">
+        </div>
+        <div class="input">
+            <p>Break: <span id="breakLengh">1</span> minutes</p> 
+            <input type="range" class="slider breakRange" name="break" min="1" max="60" step="1" value="1">
+        </div>
+        
+    </div>
+
+
+<div id="timerDisplay">
+    <p id="session">Focus</p>
+    <h3 id="timerTime"><span id="minutes">00</span> : <span id="seconds">00</span> </h3>
+</div>
+
+    <div id="btn-action">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </div>
+</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

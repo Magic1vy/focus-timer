@@ -1,0 +1,94 @@
+body{
+    background-image: url(3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#container{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.41082370448179273) 79%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    border-radius: 15px;
+}
+h1{
+    font-family: 'Audiowide', display;
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    font-family: 'Audiowide', display;
+}
+button{
+    font-family: 'Audiowide', display;
+    font-size: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.797);
+    border: 1px solid black;
+    margin: 15px;
+    transition: opacity .2s;
+}
+button:hover{
+    background: white;
+    cursor: pointer;
+}
+h3{
+    font-family: 'Audiowide', display;
+    font-size: 90px;
+}
+#timerDisplay{
+    display: flex;
+    flex-direction: column;
+}
+#session{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: -60px;
+    text-decoration: underline;
+}
+#interval{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    border-radius: 10px;
+    background: #898888;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    background: #000000;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 17px;
+    height: 17px;
+    background: #000000;
+    cursor: pointer;
+}
+@media all and (max-width:800px) {
+    h3{
+        font-size: 60px;
+    }
+}
